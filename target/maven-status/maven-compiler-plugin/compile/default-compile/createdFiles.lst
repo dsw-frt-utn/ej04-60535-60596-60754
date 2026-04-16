@@ -10,6 +10,7 @@ views\MenuView$1.class
 app\Program.class
 views\VehiculoViewModel.class
 views\ListarVehiculosView.class
+views\ListarVehiculosView$3.class
 views\MenuView$3.class
 domain\Sucursal.class
 views\ListarVehiculosView$2.class
