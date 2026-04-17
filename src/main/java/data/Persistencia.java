@@ -23,7 +23,7 @@ public class Persistencia {
         sucursales.add(s1);
         sucursales.add(s2);
     }
-    
+    /*
     private static void inicializarVehiculos(){
         Sucursal s1 = sucursales.get(0);
         Sucursal s2 = sucursales.get(1);
@@ -39,7 +39,7 @@ public class Persistencia {
         vehiculos.add(v3);
         vehiculos.add(v4);
     }
-    
+    */
     public static ArrayList<Vehiculo> getVehiculos(){
         return vehiculos;
     }
@@ -48,11 +48,18 @@ public class Persistencia {
         return vehiculos.stream()
                 .filter(v -> v.getPatente().equals(patente))
                 .findFirst();
+        
     }
-    
+    public static ArrayList<Sucursal> getSucursales() {
+        return sucursales;
+    }
+    public static void agregarVehiculo(Vehiculo v){
+        vehiculos.add(v);
+    }
     public static void inicializar(){
         inicializarResponsables();
         inicializarSucursales();
-        inicializarVehiculos();
+        //inicializarVehiculos();
     }
+  
 }
